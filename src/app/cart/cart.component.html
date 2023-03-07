@@ -1,0 +1,11 @@
+<a [routerLink]="['/']">
+  <button class="back">Volver</button>
+</a>
+
+<h2>CART</h2>
+
+<!-- listamos los productos que agreguemos al carro -->
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>

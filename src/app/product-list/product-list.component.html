@@ -10,9 +10,13 @@ Con la propiedad [ ] podemos usar el valor de la propiedad en una expresión de 
 *ngIf es el bucle if, especificamos que cumpla la condición
 -->
 
-<div *ngFor="let product of products">
+<!-- index as productId: para asignar cada índice en la matriz products a la variable productId cuando se itera sobre la lista. -->
+<div *ngFor="let product of products; index as productId">
   <h3>
-    <a [title]="product.name + ' details'" href="">
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', productId]"
+    >
       {{ product.name }}
     </a>
   </h3>
