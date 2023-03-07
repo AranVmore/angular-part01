@@ -12,6 +12,8 @@ import { CartComponent } from './cart/cart.component';
 // para registrar los proveedores de HttpClient de Angular a nivel mundial.
 import { HttpClientModule } from '@angular/common/http';
 
+import { ShippingComponent } from './shipping/shipping.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
     ]),
   ],
   declarations: [
@@ -30,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
+    ShippingComponent,
   ],
   bootstrap: [AppComponent],
 })
