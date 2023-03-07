@@ -1,4 +1,11 @@
+.fancy-button {
+  color: coral;
+  font-weight: 600;
+}
 
+.fancy-button i.material-icons {
+  color: rgb(167, 86, 86);
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
